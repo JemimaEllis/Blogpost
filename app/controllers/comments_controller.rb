@@ -1,4 +1,5 @@
 class CommentController < ApplicationController
+
   def index
     @post = Post.find(params[:post_id])
     @comments = @post.comments
@@ -42,6 +43,6 @@ class CommentController < ApplicationController
 
   protected
   def comment_params
-    params.require(:comment).permit(:username, :body, :location, :email_address, :age)
+    params.require(:comment).permit(:username, :body, :location, :email_address, :age, :post_id)
   end
 end
