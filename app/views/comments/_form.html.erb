@@ -1,0 +1,23 @@
+<%= form_for([@post, @comment]) do |f| %>
+
+<%= f.label :username %>
+<%= f.text_field :username %>
+
+<%= f.label :body %>
+<%= f.text_field :body %>
+
+<%= f.label :location %>
+<%= f.text_field :location %>
+
+<%= f.label :email_address %>
+<%= f.text_field :email_address %>
+
+<%= f.label :age %>
+<%= f.number_field :age %>
+
+<%= f.label :post_id %>
+<%= f.number_field :post_id %>
+
+<%= f.submit %>
+
+<% end %>

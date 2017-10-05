@@ -1,0 +1,9 @@
+<p>Username: <%= comment.username %></p>
+<p>Body: <%= comment.body %></p>
+<p>Location: <%= comment.location %></p>
+<p>Email_Address: <%= email_address %></p>
+<p>Age: <%= comment.age %></p>
+
+<%= link_to "Show Page", post_comment_path(@post, comment) unless controller_name == "comments" %>
+
+<%= link_to "Edit", edit_post_comment(@post, comment) if controller_name == "comments" %>

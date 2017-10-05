@@ -1,0 +1,11 @@
+<p>Title: <%= post.title %></p>
+<p>author: <%= post.author %></p>
+<p>theme: <%= post.theme %></p>
+<p><%= post.picture_url %></p>
+<p><%= post.body %></p>
+
+<%= link_to "Show Page", post if action_name == "index" %> |
+<%= link_to "Edit Page", edit_post_path(post) %>
+
+
+<br>
